@@ -9,6 +9,7 @@ import { RecipeItemComponent } from './recipes/recipe-item/recipe-item.component
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingItemComponent } from './shopping-item/shopping-item.component';
 import { ShoppingEditComponent } from './shopping-edit/shopping-edit.component';
+import {RecipeDetailComponent} from "./recipes/recipe-book/recipe-detail/recipe-detail.component";
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { ShoppingEditComponent } from './shopping-edit/shopping-edit.component';
     RecipesComponent,
     RecipeBookComponent,
     RecipeItemComponent,
+    RecipeDetailComponent,
     ShoppingListComponent,
     ShoppingItemComponent,
     ShoppingEditComponent

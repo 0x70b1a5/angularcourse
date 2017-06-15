@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  @Input() showRecipeBook = true;
+  @Input() showShoppingList = true;
+
+  onNavEvent(e: {recipeBook: boolean, shoppingList: boolean}) {
+    console.log(e)
+    this.showRecipeBook = e.recipeBook;
+    this.showShoppingList = e.shoppingList;
+  }
 }

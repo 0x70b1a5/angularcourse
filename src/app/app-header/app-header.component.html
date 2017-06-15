@@ -1,13 +1,13 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a href="#" class="navbar-brand">dumbshopper</a>
+      <a href="#" class="navbar-brand" (click)="clickMainLink()">dumbshopper</a>
     </div>
 
     <div class="navbar-default">
       <ul class="nav navbar-nav">
-        <li> <a href="#">Herp</a> </li>
-        <li> <a href="#">Derp</a> </li>
+        <li> <a href="#" (click)="clickRBLink()">Herp</a> </li>
+        <li> <a href="#" (click)="clickSLLink()">Derp</a> </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
