@@ -1,17 +1,17 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a href="#" class="navbar-brand" (click)="clickMainLink()">dumbshopper</a>
+      <a class="navbar-brand" routerLink="/">dumbshopper</a>
     </div>
 
     <div class="navbar-default">
       <ul class="nav navbar-nav">
-        <li> <a href="#" (click)="clickRBLink()">Herp</a> </li>
-        <li> <a href="#" (click)="clickSLLink()">Derp</a> </li>
+        <li routerLinkActive="active"> <a routerLink="/recipes">Herp</a> </li>
+        <li routerLinkActive="active"> <a routerLink="/shoppinglist">Derp</a> </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown" appDropdown>
-          <a href="#" class="dropdown-toggle" role="button">Burp <span class="caret"></span></a>
+          <a class="dropdown-toggle" role="button">Burp <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li> <a href="#">Horp</a> </li>
             <li> <a href="#">Dorp</a> </li>

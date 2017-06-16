@@ -14,24 +14,4 @@ export class AppHeaderComponent implements OnInit {
   ngOnInit() {
   }
 
-  clickMainLink() {
-    this.navigator.emit({
-      recipeBook: true,
-      shoppingList: true
-    })
-  }
-
-  clickRBLink() {
-    this.navigator.emit({
-      recipeBook: true,
-      shoppingList: false
-    })
-  }
-
-  clickSLLink() {
-    this.navigator.emit({
-      recipeBook: false,
-      shoppingList: true
-    })
-  }
 }

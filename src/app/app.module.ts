@@ -12,7 +12,10 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
 import {RecipeDetailComponent} from "./recipes/recipe-book/recipe-detail/recipe-detail.component";
 import {DropdownDirective} from "./shared/dropdown.directive";
 import {ShoppingListService} from "./shopping-list/shoppinglist.service";
-
+import {Router, RouterModule, Routes} from "@angular/router";
+import { Four04Component } from './four04/four04.component';
+import { HomeComponent } from './home/home.component';
+import { AppRoutingModule } from './app-routing.module'
 
 @NgModule({
   declarations: [
@@ -26,10 +29,12 @@ import {ShoppingListService} from "./shopping-list/shoppinglist.service";
     ShoppingItemComponent,
     ShoppingEditComponent,
     DropdownDirective,
-
+    Four04Component,
+    HomeComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [ShoppingListService],
   bootstrap: [AppComponent]
